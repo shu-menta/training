@@ -1,13 +1,7 @@
 import { atom, selector } from 'recoil';
 import { Todo } from './types';
 
-const defaultTodoList: Todo[] = [
-  {
-    id: 1,
-    title: 'やること1',
-    isCompleted: false,
-  },
-];
+const defaultTodoList: Todo[] = [];
 
 export const todoListState = atom<Todo[]>({
   key: 'todoListState',
